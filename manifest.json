@@ -1,11 +1,11 @@
 {
-	"id": "obsidian-sample-plugin",
-	"name": "Sample Plugin",
+	"id": "obsidian-tab-rotator",
+	"name": "Tab Rotator",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "This is a sample plugin for Obsidian. This plugin demonstrates some of the capabilities of the Obsidian API.",
-	"author": "Obsidian",
-	"authorUrl": "https://obsidian.md",
-	"fundingUrl": "https://obsidian.md/pricing",
+	"description": "This plugin rotates opened tabs to the left or right with a specified interval",
+	"author": "Steven Jin",
+	"authorUrl": "https://github.com/autohub7",
+	"fundingUrl": "https://www.buymeacoffee.com/steven.jin",
 	"isDesktopOnly": false
 }
