@@ -16,8 +16,8 @@ Set the interval of tab rotation
 
   <li> Using Command Palette (Windows: Ctrl+P / MacOS: Cmd + P)
     <ol>
-      <li>Enable Rotate tab to the right</li>
-      <li>Enable Rotate tab to the left </li>
+      <li>Tab Rotator: Start Rotating to the right</li>
+      <li>Tab Rotator: Start Rotating to the left </li>
       <li>Stop tab rotation </li>
     </ol>
   </li>
