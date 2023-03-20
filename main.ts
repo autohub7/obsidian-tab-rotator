@@ -88,6 +88,7 @@ export default class MyPlugin extends Plugin {
 
 	startTabRotation() {
 		if (!isNumeric(this.settings.interval)) {
+			this.settings.interval = "5";
 			new Notice('The specified internval is not number. Rotate with the default interval 5 secs');
 		}
 
