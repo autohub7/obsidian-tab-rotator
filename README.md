@@ -1,9 +1,9 @@
 # Obsidian Tab Rotator
 
-The Tab Rotator Plugin is an Obsidian plugin that enables users to rotate the currently opened tabs in their Obsidian workspace. With this plugin, users can easily move through their opened tabs by rotating them to the left or right, instead of manually clicking through each one.
+The Tab Rotator Plugin is an Obsidian plugin that enables users to rotate the currently opened tabs in their Obsidian workspace. With this plugin, users can easily move through their opened tabs by rotating them to the right or left, instead of manually clicking through each one.
 
 ## Features
-Rotate tabs to the left or right with a specific interval
+Rotate tabs to the right or left with a specified interval
 
 ![Example](example.gif)
 
