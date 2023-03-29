@@ -25,4 +25,6 @@ Go to the Obsian Settings and set the interval of tab rotation (second) \
   * Stop tab rotation 
 
 ## Donating
-<a href="https://www.buymeacoffee.com/steven.jin" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 160px !important;" ></a>
+If you find this custom plugin useful and would like to show your appreciation, please consider supporting me by buying me a coffee. Your donation would be greatly appreciated and would help me to continue creating helpful tools like this in the future. Thank you!
+
+[<img style="float:left" src="https://user-images.githubusercontent.com/14358394/115450238-f39e8100-a21b-11eb-89d0-fa4b82cdbce8.png" width="200">](https://ko-fi.com/stevenjin)
