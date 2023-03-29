@@ -1,7 +1,7 @@
 {
 	"id": "tab-rotator",
 	"name": "Tab Rotator",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"minAppVersion": "1.0.0",
 	"description": "This plugin rotates opened tabs to the left or right with a specified interval",
 	"author": "Steven Jin",
