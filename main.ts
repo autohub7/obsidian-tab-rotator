@@ -2,12 +2,14 @@ import { App, Notice, Plugin, PluginSettingTab, Setting, WorkspaceLeaf } from 'o
 
 interface Settings {
 	interval: string;
+	options: string;
 	enabled: boolean;
 	viewTypes: string[];
 }
 
 const DEFAULT_SETTINGS: Settings = {
 	interval: '5',
+	options: 'split',
 	enabled: true,
 	viewTypes: ['markdown', 'canvas'],
 }
@@ -20,7 +22,7 @@ export default class MyPlugin extends Plugin {
 
 	async onload() {
 		await this.loadSettings();
-
+		
 		this.addRibbonIcon('rotate-cw', 'Tab Rotation', (evt: MouseEvent) => {
 			this.enabled = !this.enabled
 			if (this.enabled) {
@@ -107,21 +109,19 @@ export default class MyPlugin extends Plugin {
 
 	getLeavesOfTypes(types: string[]): WorkspaceLeaf[] {
 		const leaves: WorkspaceLeaf[] = [];
-
-		this.app.workspace.iterateAllLeaves((leaf) => {
-			const isMainWindow = leaf.view.containerEl.win == window;
-			const correctViewType = types.contains(leaf.view.getViewType());
-			const sameWindow = leaf.view.containerEl.win == activeWindow;
-
-			//Ignore sidebar panes in the main window, because non-main window don't have a sidebar
-			const correctPane = isMainWindow ? (sameWindow && leaf.getRoot() == this.app.workspace.rootSplit) : sameWindow;
-			if (
-				correctViewType
-				&& correctPane
-			) {
+		
+		if (this.settings.options == 'window') {
+			this.app.workspace.iterateRootLeaves((leaf) => {
 				leaves.push(leaf);
-			}
-		});
+			});
+		} 
+		else {
+			// @ts-expect-error
+			let tabContainer = this.app.workspace.activeLeaf.parent
+			tabContainer.children.forEach((leaf: WorkspaceLeaf) => {
+				leaves.push(leaf);
+			});
+		}
 
 		return leaves;
 	}
@@ -191,6 +191,17 @@ class SettingTab extends PluginSettingTab {
 				this.plugin.settings.interval = value;
 				await this.plugin.saveSettings();
 			}));
+
+		new Setting(containerEl)
+			.setName('Select rotate range')
+			.addDropdown(dropDown => {
+				dropDown.addOption('split', 'Split');
+				dropDown.addOption('window', 'Window');
+				dropDown.onChange(async (value) =>	{
+					this.plugin.settings.options = value;
+					await this.plugin.saveSettings();
+				});
+			});
 	}
 }
 
