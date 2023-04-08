@@ -1,5 +1,7 @@
 {
 	"1.0.0": "Initial release",
 	"1.0.1": "Interval time type checking",
-	"1.0.2": "Allow less than 1 sec and disallow less than 0.1 sec"
+	"1.0.2": "Allow less than 1 sec and disallow less than 0.1 sec",
+	"1.0.3": "Re-build for Production",
+	"1.1.0": "Added rotation in the current split only option"
 }

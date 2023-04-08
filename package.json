@@ -1,6 +1,6 @@
 {
 	"name": "obsidian-sample-plugin",
-	"version": "1.0.3",
+	"version": "1.1.0",
 	"description": "The Tab Rotator Plugin is an Obsidian plugin that enables users to rotate the currently opened tabs in the current window.",
 	"main": "main.js",
 	"scripts": {
