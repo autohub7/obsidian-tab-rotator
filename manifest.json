@@ -3,9 +3,9 @@
 	"name": "Tab Rotator",
 	"version": "1.1.0",
 	"minAppVersion": "1.0.0",
-	"description": "This plugin rotates opened tabs to the left or right with a specified interval",
+	"description": "This plugin rotates opened files to the left or right with a specified interval",
 	"author": "Steven Jin",
 	"authorUrl": "https://github.com/autohub7",
-	"fundingUrl": "https://www.buymeacoffee.com/steven.jin",
+	"fundingUrl": "https://ko-fi.com/stevenjin",
 	"isDesktopOnly": false
 }
