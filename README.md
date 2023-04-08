@@ -5,13 +5,8 @@ The Tab Rotator Plugin is an Obsidian plugin that enables users to rotate the cu
 ## Features
 Rotate tabs to the right or left with a specified interval
 
-## Demo (Speed up)
-**Enable by the ribbon button**\
-![Example](example-enable.gif)
-\
-\
-**Enable rotating left by Command Palette**\
-![Example](example-rotateLeft.gif)
+## Demo (Speed up 1.5x)
+https://user-images.githubusercontent.com/10937668/230733810-6a37b531-74b7-4ebe-823e-ffc44f99f503.mp4
 
 ## Usage
 ### 1. Enable/Disable by clicking the Tab Auto-Rotation Ribbon Icon (Rotate to the right)
