@@ -14,15 +14,16 @@ Rotate tabs to the right or left with a specified interval
 ![Example](example-rotateLeft.gif)
 
 ## Usage
-Go to the Obsian Settings and set the interval of tab rotation (second) \
-*Setting > Community Plugins > Tab Rotator > Interval*
-
-
 ### 1. Enable/Disable by clicking the Tab Auto-Rotation Ribbon Icon (Rotate to the right)
 ### 2. Enable/Disable using Command Palette (Windows: Ctrl+P / MacOS: Cmd + P) 
   * Start Rotating to the right 
   * Start Rotating to the left 
   * Stop tab rotation 
+
+## Option
+1. Set the interval of tab rotation (second) 
+2. Set rotation tab only or all splits in the main window \
+*Setting > Community Plugins > Tab Rotator*
 
 ## Donating
 If you find this custom plugin useful and would like to show your appreciation, please consider supporting me by buying me a coffee. Your donation would be greatly appreciated and would help me to continue creating helpful tools like this in the future. Thank you!
